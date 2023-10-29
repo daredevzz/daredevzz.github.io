@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>SolarKH</title>
+<link rel='stylesheet' href="style.css">
+<link rel="icon" href="SolarKH.png">
+
+</head>
+<body>
+
+<nav class="navbar">
+<input type="checkbox" id="menu-bar">
+<label class="menubar" for="menu-bar">Menu</label>
+<div class = 'logoContainer'><img class='logo' src="SolarKH.png" alt="SolarKh"> 
+  <a href="#home"><h3>SolKH</h3></a>
+</div>
+
+  
+<div class="navbar-links">
+<ul>
+<li class="long"><a href="#calculator" class="link">Calculator</a></li>
+
+<li class="long"><a href="#" class="link">Laws</a></li>
+<li class="long"><a href="#" class="link">Contact</a></li>
+<div id="google_translate_element"></div>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
+<script>
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement(
+    {pageLanguage:'en'},
+    'google_translate_element'
+  )
+}
+ </script>
+</ul>
+
+
+
+
+</div>
+</nav>
+
+
+<main  id='home'>
+ <img class = 'responsiveImage' src="SOLKH.png">
+ <p>To be bright, you must use solar light</p>
+<a class="bootstrap-btn" href="#">Get Started</a>
+</main>
+
+<section  id='calculator' class ='calculator'>
+  <div class="descriptionA">
+    <h2>Calculator Description </h2>
+    <p>Here are a few solar panel calculators I made. <br> Some of these include output generator, solar battery and inverter calculator,</p>
+   
+  </div>
+
+  <div class="calculate">
+    <form class="calculatorForm">
+       <label for="fname">Monthly Energy Usage (KW):</label><br>
+      <input class = 'textbox' type="number" id="fname" name="fname" placeholder="E.G. 215 KW"><br>
+      
+      <label for="lname">Sun Hours (H):</label><br>
+      <input class = 'textbox' max="24" min="1" type="number" id="lname" name="lname" placeholder="E.G. 5 Hours"><br>
+
+      <label for="dname">Solar Panel Inverter Efficiency Rating (%):</label><br>
+    <input class = 'textbox'type="number" max="100" min="1" id="dname" name="dname" placeholder="E.G. 50%"><br>
+    
+      <label for="xname">Total Solar Panel System Wattage (W):</label><br>
+      <input class = 'textbox' type="number" id="xname" name="xname" placeholder="E.G. 250W"><br><br>
+      <div ><input href="#" class = 'calculatorSubmit' onclick="getMonthlyRequirements" type="submit" value="Submit">
+        <p id="result">Result: None</p></div>
+      <br>
+
+      
+    </form> 
+  </div>
+  
+
+</section>
+
+<section class="benefits">
+  <div class="blue" >  <h1 >Benefits of the Calculator</h1></div>
+<div class="gridedBenefits">
+
+  <div  class=" evenly col-4 col-s-12">
+    <img alt="Icon of energy" class="iconY"  src="icons8-energy-100.png">
+    <h3>Estimate Energy Production</h3x>
+      <p>The Calculator allows you to estimate how much energy your solarpanels are likely to produce on a monthly basis. This helps with sizing the syste, and knowing your return on investment</p>
+  </div>
+
+  <div  class=" evenly col-4 col-s-12">
+    <img class="iconY" alt="Icon of footprint" src="icons8-footprint-100.png">
+    <h3>Reduce Your Carbon Footprint</h3x>
+      <p>Every kilowatt-hour of electricity from your solar panels means one less from dirty or polluting fuels. The calculators information can help you do your part to address climate change and help create a cleaner environment for future generations.</p>
+  </div>
+
+  <div  class=" evenly col-4 col-s-12">
+    <img class="iconY" alt="Icon of money" src="icons8-money-100.png">
+    <h3>Reduce Electricity Prices</h3x>
+      <p>The information given from the calculator allows you to lock in your electricity rate today with affordable solar and insulate yourself from future price hikes from other sources of power.</p>
+  </div>
+
+
+</div>
+
+<div class="blue" >  <h1 >Information</h1></div>
+
+
+
+<div   id='laws'class="laws">
+
+  
+  <div  class=" genInfo evenly1 col-4 col-s-12">
+    <h3>General Information</h3>
+<br>
+      
+
+        <p>In just 2018-2019, 415 MW of utility-scale solar projects were approved, amounting to 14.3% of current grid capacity.</p>
+        <br>
+        <p> Solar matches Cambodia's rising daytime peak demand, especially from growing air conditioner use.</p>
+        <br>
+        <p> Solar panels can be installed rapidly in 1 year, compared to 4-5 years for hydropower or coal plants.
+        </p>
+        <br>
+      
+
+
+  </div>
+
+  <div  class=" evenly1 col-4 col-s-12">
+    <img src="icons8-pdf-100.png">
+    <h3>Solar Panel Information In Cambodia<br>
+      From United Nations Development Program </h3x>
+<br>
+<br>
+      <a href="https://www.undp.org/sites/g/files/zskgke326/files/migration/kh/DREI-Booklet-English.pdf
+      " target=”_blank”>Click Here</a>
+
+
+  </div>
+
+  <div  class=" evenly1 col-4 col-s-12">
+    <img src="icons8-pdf-100.png">
+    <h3>Solar Panel Information In Cambodia<br>
+      Switch Asia(Part of the EU) </h3x>
+<br>
+<br>
+      <a href="https://www.switch-asia.eu/site/assets/files/3844/1__solar_pv-en.pdf" target=”_blank”>Click Here</a>
+
+
+  </div>
+
+
+
+
+</div>
+
+
+
+</section>
+
+<div  id='footer' class="footer">
+
+  <div class="social insta">
+    <img src="icons8-instagram-100.png" alt="Instagram Icon">
+    <img src="icons8-facebook-100.png" alt="Facebook Icon">
+  </div>
+
+  <div class="copyright"> 
+    <h3>Copyright @2023 Solar KH</h3>
+    <h3>All Rights Reserved</h3>
+  </div>
+
+  <div class="social twitter">
+    <img src="icons8-twitter-100.png" alt="Twitter Icon">
+    <img src="icons8-tik-tok-100.png" alt="TikTok Icon">
+  </div>
+
+</div>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
